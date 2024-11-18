@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+        
+        /* animacion scroll */
+        /*@keyframes appear{
+
+            from{
+                opacity: 0;
+                scale: 0.5;
+            } 
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+
+        }
+
+        div {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }*/
+
+        
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+            text-decoration: none;
+            scroll-behavior: smooth;
+
+        }
+
+        body{
+            width: 100%;
+            height: auto;
+            background-color: #E0DDCF;
+            background-image:repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            /*background-image: url(img/bg.png);*/
+           /* background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;*/
+            /*pointer-events: none;*/ /* no dejar scroll */
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="Home">
+<!-- barra --> 
+    <nav>
+        <div class="nav-container">
+           <div class="links">
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#Home">Home</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#works">Works</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+           </div>
+        </div>
+    </nav>
+    <!--<div popover id="id">hola</div> <button popovertarget="id">more</button>-->
+
+<!-- banner inicio--> 
+  <div class="banner" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="slider" style="--quantity: 5">
+            <div class="item" style="--position: 1"><img src="img/3D render_enviroment.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="img/Tiny's Big Things.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="img/mariposa.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="img/zorro_andando.gif" alt=""></div>
+            <div class="item" style="--position: 5"><img src="img/casa buho UV.jpg" alt=""></div>
+            
+        </div>
+        <div class="content">
+            <div class="author" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
+                <h2>Hi I'm <span>Pablo</span></h2>
+            </div>
+            <h1 data-content="welcome to my Portfolio" data-aos="fade-left" data-duration="1500" data-aos-delay="1000">
+                Welcome to my Portfolio!
+            </h1>
+            
+        <!--<div class="model"></div>-->
+        </div>
+    </div>
+<!-- About me --> 
+    <section class="about" id="about">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+            <span>About Me</span>
+        </div>
+        <div class="about-details">
+            
+            <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                <img src="img/me.png" alt="">
+            </div>
+            <div class="right">
+
+                <!--<div class="content-present">
+                    <h1 data-aos="fade-left">
+                        Hey I'm 
+                        <span>Pablo</span>
+                    </h1>
+                    <div class="typewrite">
+                        I'm a
+                        <span class="typewritting"></span>
+                        <label for=""></label>
+                    </div>
+                </div> -->
+
+                <div class="me" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Something about me and my passion</div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">Hi, I’m Pablo. I am an associate's degree student in 3D Animations, Games and Interactive Environments. I enjoy living in an environment where learning and acquiring new skills is the norm, in order to be prepared in the best way to partake in this great sector’s labor market. Most of my skills were self taught, so in order to offer the best quality and optimal work, I demand nothing but the best from myself. For me, the most enticing and interesting part of this line of work is game design, 3D modeling, sound design, post production and special effects. I am looking forward to learning the ropes in this industry to improve my own skills.</p>
+            </div>
+            
+        </div>
+        <!--<div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                <button> <a href="img/CV_eruopass.pdf" download="img/CV_eruopass.pdf" class="descarga"></a>Download CV</button>
+            </div>-->
+    </div>
+    </section>
+
+<!-- Skills --> 
+ <section class="skills" id="skills">
+         <div class="content">
+    <div class="title" data-aos="fade-up" data-aos-duration="1200">
+        <span>Skills</span>
+    </div>
+    <div class="skills-details">
+        <div class="cajas">
+            <div class="box">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">Blender</div>
+                <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">80% <img src="img/blender_icon.png" alt=""></div>
+                
+            </div>
+            <div class="box">
+
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">Procreate</div>
+                <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">75% <img src="img/procreate_icon.png" alt=""> </div>
+                
+            </div>
+            <div class="box">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Photoshop</div>
+                <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">65% <img src="img/photoshop_icon.png" alt=""></div>
+                
+            </div>
+            <div class="box">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Preimer Pro</div>
+                <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">80% <img src="img/premiere_icon.png" alt=""></div>
+                
+            </div>
+            <div class="box">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="550">After Effects</div>
+                <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="700">40% <img src="img/Adobe_After_Effect.png" alt=""></div>
+                
+            </div>
+            <div class="box">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="550">Unity</div>
+                <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="700">30% <img src="img/unity_icon.png" alt=""></div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- My works --> 
+
+ <section class="works" id="works">
+
+     <div class="content">
+
+
+         <div class="title" data-aos="fade-up" data-aos-duration="1200">
+            <span>Works</span>
+        </div>
+
+         <div class="cajas">
+             <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                 <img src="img/casa buho UV.jpg" alt="1">
+                 <div class="topic"><p>UV maps designed and modeled</p></div>
+                 
+             </div>
+             <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                
+                <iframe src="https://player.vimeo.com/video/1025770452?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  width="100%" height="92%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Motion_graphic_music"></iframe>
+                 <div class="topic"> <p>Musical Video Production</p></div>
+                
+             </div>
+             <div class="box" data-aos="fade-up" data-aos-duraion="1200" data-aos-delay="600">
+                 <img src="img/Tiny's Big Things.png" alt="3">
+                 <div class="topic"><p>A Game Jam videogame creation. <br> My part is all about the music and SFX  <br>To know more about it <a href="https://ismael04.itch.io/tinys-big-things" target="_blank">Click Here!</a></p></div>
+                 
+             </div>
+             <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                 <iframe src="https://player.vimeo.com/video/1025901168?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  width="100%" height="86%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Sánchez_Pablo_motion_graphic_corta"></iframe>
+                 <div class="topic"> <p>3D modelling and animation for an evironment composition</p></div>
+                
+             </div>
+             <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
+                 <img src="img/3D render_enviroment.png" alt="5">
+                 <div class="topic"> <p>3D model and textured scenario</p></div>
+                
+             </div>
+             <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200">
+                 <iframe src="https://player.vimeo.com/video/1025773088?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="92%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="edicion audio"></iframe>
+                 <div class="topic"><p>Video composition and production of SFX</p></div>
+                 
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <!-- Contact --> 
+    <section class="contact" id="contact">
+    
+
+     <div class="title" data-aos="fade-up" data-aos-duration="1200">
+            <span>Contact Me</span>
+        </div>
+
+    <div class="content">
+       
+        <div class="texto" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="250">
+            If you like how I work, do not hesite to contact me!!
+        </div>
+        
+    <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="450">
+        <button><a href="mailto:pablo.sanc127@gmail.com? Subject=Aquí%20el%20asunto%20del%20mail" target="_blank">pablo.sanc127@gmail.com</a></button>
+        <button>(+34) 697 30 88 72</button>
+        <button><a href="img/CV_Pablo_Sánchez_Eruopass.pdf" target="_blank">CV</a></button>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+ <footer>
+     <div class="texto"><span>Pablo Sánchez Campos</span></div>
+ </footer>
+
+ <!--js-->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+<script src="aos.js"></script>
+</body>
+</html>
